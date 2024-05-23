@@ -5,12 +5,12 @@ import flutter from '../assets/jumia.png'
 const Container2 = () =>{
     return(
        <div class="">
-        <p class="font-light text-lg text-center sm:mt-10 mt-5">
+        <p class="font-light text-2xl text-center sm:mt-10 mt-10">
           Our gems work at:
         </p>
         <img
         src={flutter} alt="Pics" 
-        className="w-full md:w-200 lg:w-200 xl:w-3/3"
+        className="w-full h-30 sm:h-40md:w-200 lg:w-200 xl:w-3/3"
 
         />
        </div>
