@@ -5,7 +5,7 @@ import photo1 from '../assets/fav.jpg'
 export const Container6 = () =>{
   return (
 <div className="mt-20">
-<div className="flex ">
+<div className="flex flex-col sm:flex-row ">
   <div className="flex-row  mr-5 sm:mr-20">
         <h3 className=' text-4xl sm:text-5xl font-thin text-gray-500 sm:ml-20 ml-5'>Latest <br/> Articles</h3><br/>
         <h4 className=' text-2xl font-thin text-gray-500 ml-5 sm:ml-20'>Explore our latest insights, innovations, views, ideas<br/> and case studies.</h4>
