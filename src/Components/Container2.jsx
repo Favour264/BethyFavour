@@ -5,7 +5,7 @@ import flutter from '../assets/jumia.png'
 const Container2 = () =>{
     return(
        <div class="">
-        <p class="font-light text-lg text-center mt-10">
+        <p class="font-light text-lg text-center sm:mt-10 mt-5">
           Our gems work at:
         </p>
         <img
