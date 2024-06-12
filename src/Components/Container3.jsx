@@ -8,7 +8,7 @@ import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
     return(
         <div class=" flex flex-col sm:flex-row ">
           <h1 class="font-light sm:text-4xl text-2xl  text-gray-500 ml-5">
-            TalentGerm is a private network for professional<br/> <span class="text-green-500">software
+           <span className='underline'>  TalentGerm</span> is a private network for professional<br/> <span class="text-green-500">software
             engineers </span>supported by seasoned experts
           </h1>
           <div class=" flex flex-wrap gap-7 mb-10" >
