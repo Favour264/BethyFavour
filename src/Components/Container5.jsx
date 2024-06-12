@@ -3,7 +3,7 @@ import photo1 from '../assets/fav.jpg'
 
 export const Container5 = () => {
     return (
-    <div className="flex flex-col sm:flex-row justify-center sm:justify-center p-2 sm:p-5 ml-5 sm:ml-20 w-6/6 sm:w-5/6 items-center text-gray-500 bg-gray-200 mt-10">
+    <div className="flex flex-col sm:flex-row justify-center sm:justify-center p-2 sm:p-5  sm:ml-20 w-6/6 sm:w-5/6 items-center text-gray-500 bg-gray-200 mt-10">
         <div className="flex flex-col justify-center items-center mb-5">
             <h1 className="text-3xl text-center float-top-left">What our <span className="font-lg text-3xl text-black">germs</span><br/>are saying...</h1>
             <p className="text-center text-xl sm:text-2xl pt-20">Discover the voices of excellence from our<br/>extraordinary engineering community.</p>

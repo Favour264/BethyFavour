@@ -14,7 +14,7 @@ import React from 'react'
               mt-5 focus:outline-none focus:border-gray-600"></input>
               <p className=" mt-20 text-white">© 2023 TalentGem Inc. Copyright and rights reserved</p>
               </div>
-              <div className="flex-col ml-20">
+              <div className="flex-col ml-5 lg:ml-20 md:ml-20 sm:ml-20">
               <h3 className="text-xl text-white">Network</h3>
               <ul>
                 <li className='mt-3 text-gray-500'>Join as Germ</li>
@@ -23,7 +23,7 @@ import React from 'react'
                 <li className='mt-3 text-gray-500'>Community</li>
               </ul>
               </div>
-              <div className="flex-col ml-20 ">
+              <div className="flex-col ml-5 lg:ml-20 md:ml-20 sm:ml-20 ">
               <h3 className="text-xl text-white">For Companies</h3>
               <ul>
                 <li className='mt-3 text-gray-500'>Start hiring!</li>
@@ -33,7 +33,7 @@ import React from 'react'
               </ul>
               <p className=" mt-10 text-white ">Terms & Conditions . Policy</p>
               </div>
-              <div className="flex-col ml-20">
+              <div className="flex-col ml-5 lg:ml-20 md:ml-20 sm:ml-20">
               <h3 className="text-xl text-white">Resources</h3>
               <ul>
                 <li className='mt-3 text-gray-500'>Updates</li>

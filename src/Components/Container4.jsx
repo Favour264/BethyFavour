@@ -4,8 +4,8 @@ import image from '../assets/ret.png';
 export const Container4 = () => {
             return (
                 <div className="relative">
-                    <img src={image} alt="Picture" className="w-full object-cover" />
-                    <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6">
+                    <img src={image} alt="Picture" className="w-full h-full object-cover" />
+                    <div className="absolute pb-10 pt-10 inset-0 flex flex-col justify-center items-center text-center px-6">
                         <h2 className="text-small sm:text-3xl font-light text-white">
                             How do TalentGems function so efficiently?
                         </h2>
