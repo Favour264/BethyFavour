@@ -1,6 +1,6 @@
 import React from 'react';
-import photo1 from '../assets/fav.jpg'
-
+import photo1 from '../assets/iuat.jpg'
+U76HT
 
 export const Container6 = () =>{
   return (
