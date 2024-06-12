@@ -13,9 +13,7 @@ export const Container4 = () => {
                             <p className="text-white mb-1 sm:mb-6">
                                 Our mission is to empower our gems to excel by offering them access to a network of seasoned experts who serve as mentors, available around the clock.
                             </p>
-                            <p className="text-white">
-                                This dedicated support system ensures that our gems can seamlessly overcome their obstacles and navigate their projects with unparalleled speed and agility.
-                            </p>
+
                         </div>
                     </div>
                 </div>
