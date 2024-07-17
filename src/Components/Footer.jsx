@@ -4,7 +4,7 @@ import React from 'react'
  export const Footer = () =>{
     return(
         <div className="w-full bg-gray-900 ">
-        <div className=" p-10  ml-20 flex flex-col sm:flex-row">
+        <div className=" p-10  ml-5 sm:ml-20 md:ml-20 lg:ml-20 flex flex-col sm:flex-row">
             <div className="">
             <h1 className="text-green-500 font-semibold text-2xl">TalentGerm</h1>
             <p className="text-gray-500 mt-5 ">Subscribe to our newsletter</p>

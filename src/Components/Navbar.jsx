@@ -1,16 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     useEffect(() => {
         const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
         const navLinks = document.getElementById('nav-links');
         const authLinks = document.getElementById('auth-links');
 
-        mobileMenuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('hidden');
-            authLinks.classList.toggle('hidden');
-        });
-    }, []);
+        const toggleMenu = () => {
+            setMenuOpen(!menuOpen);
+        };
+
+        mobileMenuToggle.addEventListener('click', toggleMenu);
+
+        // Cleanup
+        return () => mobileMenuToggle.removeEventListener('click', toggleMenu);
+    }, [menuOpen]);
 
     return (
         <div className="width-50">
@@ -19,16 +25,16 @@ const Navbar = () => {
 
                 <button className="block sm:hidden px-2 py-1 border border-green-800 rounded text-green-800" id="mobile-menu-toggle">
                     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
 
-                <div className="hidden sm:flex flex-row sm:flex-row flex-wrap justify-center md:justify-start md:flex-no-wrap" id="nav-links">
+                <div className={`sm:flex flex-row sm:flex-row flex-wrap justify-center md:justify-start md:flex-no-wrap ${menuOpen ? '' : 'hidden'}`} id="nav-links">
                     <a href="#" className="text-black mr-1 sm:mr-8 md:ml-0 md:my-0 my-2">For Companies</a>
                     <a href="#" className="text-black mr-1 sm:mr-10 md:my-0 my-2">For Talents</a>
                 </div>
 
-                <div className="hidden sm:flex flex-no-wrap sm:ml-auto ml-1" id="auth-links">
+                <div className={`sm:flex flex-no-wrap sm:ml-auto ml-1 ${menuOpen ? '' : 'hidden'}`} id="auth-links">
                     <a href="#" className="text-black mr-1 sm:mr-8 md:my-0 my-2">Sign In</a>
                     <a href="#" className="text-green-800 font-bold my-2">Get Started</a>
                 </div>
